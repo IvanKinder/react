@@ -2,20 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #ffffff;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +24,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.message-container {
+  margin-top: 2vh;
+  display: grid;
+  gap: 2vw;
+}
+
+.msg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2vw;
+  width: 70vw;
+  margin: auto;
+}
+
+span {
+  max-width: 300px;
+  overflow: auto;
 }

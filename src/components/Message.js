@@ -1,7 +1,9 @@
-function MyHeader ({name}) {
+function MyHeader ({text, author, date}) {
     return(
-        <div>
-            Привет, {name}
+        <div className="msg">
+            <span>{author}</span>
+            <span>{text}</span>
+            <span>{date ? date.toDateString() : ''}</span>
         </div>
     )
 }
