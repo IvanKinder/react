@@ -44,3 +44,8 @@ span {
   max-width: 300px;
   overflow: auto;
 }
+
+.body-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
