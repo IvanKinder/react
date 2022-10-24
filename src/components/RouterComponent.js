@@ -31,7 +31,9 @@ export default function RouterComponent({chatsList, setChatsList, messageList, s
                 <Route path="/profile" element={<Profile/>}/>
                 <Route path="/chats" element={<BodyContainer chatsList={chatsList} setChatsList={setChatsList} messageList={messageList} setMessageList={setMessageList}/>}/>
                 <Route path="/chat">
-                    <Route path=":id" element={<MyForm chatsList={chatsList} setChatsList={setChatsList} messageList={messageList} setMessageList={setMessageList}/>}/>
+                    <Route path=":id" element={
+                        <MyForm chatsList={chatsList} setChatsList={setChatsList} messageList={messageList} setMessageList={setMessageList}/>
+                    }/>
                 </Route>
                 <Route path="404" element={<NotFound404/>}/>
                 <Route path="*" element={<NotFound404/>}/>

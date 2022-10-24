@@ -3,17 +3,12 @@ import {Button, TextField} from "@mui/material";
 import Message from "./Message";
 import MyMessages from "./MessageList";
 import Chats from "./Chats";
-import {useLocation, useNavigate, useParams} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 
 function MyForm({chatsList, setChatsList, messageList, setMessageList}) {
     let {id} = useParams(),
         contact = undefined
-    const {state} = useLocation(),
-        navigate = useNavigate()
-
-    if (state) {
-        id = state.id
-    }
+    const navigate = useNavigate()
 
     if (chatsList) {
         chatsList.forEach((el) => {

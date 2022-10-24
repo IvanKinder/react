@@ -1,7 +1,4 @@
-import {useState} from "react";
 import Chats from "./Chats";
-import Message from "./Message";
-import MyMessages from "./MessageList";
 
 function BodyContainer ({chatsList, setChatsList, messageList, setMessageList}) {
 

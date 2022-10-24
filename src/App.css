@@ -37,6 +37,9 @@ span {
 .body-container {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  margin-top: -1.37vh;
 }
 
+.left-panel {
+  display: grid;
+  gap: 2vw;
+}
