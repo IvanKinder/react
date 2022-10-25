@@ -1,7 +1,13 @@
+import Toggler from "./Toggler";
+
 function Profile () {
+
     return(
         <div>
-            Профиль пользователя
+            <h1>Профиль пользователя</h1>
+            <div>
+                <Toggler/>
+            </div>
         </div>
     )
 }
